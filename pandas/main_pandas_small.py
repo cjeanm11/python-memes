@@ -2,7 +2,6 @@ import pandas as pd
 import time
 import logging
 
-
 def extract(file_path: str, chunksize: int):
     for chunk in pd.read_csv(file_path, chunksize=chunksize):
         yield chunk
